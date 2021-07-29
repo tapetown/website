@@ -8,10 +8,10 @@ class Player {
         this.tba = document.getElementById('tba')
 
         this.setPlayerState = this.setPlayerState.bind(this)
-        this.init()
+        this.mount()
     }
 
-    init() {
+    mount() {
         this.playButton.addEventListener('click', this.setPlayerState)
         this.initVolumeSlider()
         this.setNowPlayingText()
@@ -31,20 +31,22 @@ class Player {
     }
 
     setNowPlayingText() {
-        this.rest.getNowPlaying().addEventListener('message', (event) => {
-            this.now.textContent = this.definePlayingText(JSON.parse(event.data)) || '...'
+        this.rest.getNowPlaying().addEventListener('message', async (event) => {
+            this.now.textContent = await this.definePlayingText(JSON.parse(event.data))
         })
     }
 
     definePlayingText(data) {
-        const { live: { is_live, streamer_name } } = data
+        const { live: { is_live } } = data
 
-        return is_live ? streamer_name : data?.now_playing?.song?.text
+        return is_live
+            ? this.rest.getNowPlayingFromJson()
+            : Promise.resolve(data?.now_playing?.song?.text)
     }
 
     setNextLiveText() {
         this.rest.getNextLive().then((res) => {
-            this.tba.textContent = res.upcoming;
+            this.tba.textContent = res
         })
     }
 

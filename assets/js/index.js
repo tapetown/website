@@ -1,12 +1,9 @@
 import { Layout, Tabs, Player, Rest, Donation } from './modules/index.js'
 
-const layout = new Layout()
-
+new Layout()
 new Tabs()
 new Player(new Rest())
 new Donation()
-
-window.addEventListener('load', layout.hidePreloader);
 
 // LIVE VIDEO
 

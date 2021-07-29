@@ -2,10 +2,10 @@ class Tabs {
     constructor() {
         this.tabs = Array.from(document.getElementsByClassName('menu-items'))
         this.content = Array.from(document.getElementsByClassName('menu-item-content'))
-        this.init()
+        this.mount()
     }
 
-    init() {
+    mount() {
         this.tabs.forEach((tab, index) => {
             tab.addEventListener('click', () => {
                 this.setUnactive()
