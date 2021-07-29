@@ -1,0 +1,116 @@
+.yt-hd-thumbnail-inner-container {
+    height:0;
+    padding-top:56.00%;
+    position:relative
+
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail,.yt-hd-thumbnail-inner-container>iframe
+
+{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-width:0
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail
+
+{
+    z-index:2
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail img
+
+{
+    max-width:105%; 
+    height: 113%
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail.yt-hd-thumbnail-darken:before
+
+{
+    display:block;
+    position:absolute;
+    content:'';
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000;
+    opacity:.3;
+    -webkit-transition:opacity .3s ease;
+    -moz-transition:opacity 
+    .3s ease;
+    transition:opacity .3s ease
+
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail.yt-hd-thumbnail-darken:hover:before
+
+{
+    opacity:1
+
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail:after
+
+{
+    display:block;
+    position:absolute;
+    content:'';
+    background-image:url(youtube-play.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center center;
+    width:50px;
+    height:50px;
+    top:50%;
+    left:50%;
+    margin-left:-20px;
+    margin-top:-10px;
+    opacity:1;
+    -webkit-:opacity .3s ease;
+    -moz-:opacity .3s ease;
+    transition:opacity .3s ease
+
+}
+
+.yt-hd-thumbnail-inner-container>a.yt-hd-thumbnail:hover:after
+
+{
+    opacity:.8
+
+}
+
+.yt-hd-thumbnail-inner-container>iframe
+
+{
+    max-width:135%; 
+    height: 117%;
+    opacity:1;
+    -webkit-transition:opacity .3s ease .3s;
+    -moz-transition:opacity .3s ease .3s;
+    transition:opacity .3s ease .3s
+
+}
+
+.yt-hd-thumbnail-inner-container.yt-hd-thumbnail-clicked>a.yt-hd-thumbnail
+
+{
+    display:none
+
+}
+
+.yt-hd-thumbnail-inner-container.yt-hd-thumbnail-clicked>iframe
+
+{
+    margin-top: -17px;
+    height: 127%; 
+    width:105%; 
+    opacity:1
+
+}

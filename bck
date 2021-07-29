@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+       ym(53969557, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/53969557" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- META -->
+    <title>tapetown//live</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/fassum/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+   
+    <!-- SCRIPTS -->
+    <script src="https://widget.mixcloud.com/media/js/widgetApi.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <div id="p_prldr">
+    <div class="contpre">
+        <span class="svg_anm">
+        </span>
+    </div>
+  </div>
+
+  <!-- AUDIOS -->
+  <audio id="myTune" preload="none">
+    <source src="http://83.219.130.133:8000/;?type=http&nocache">
+  </audio>
+
+  <audio id="cash" preload="auto">
+    <source src="assets/audio/cash1.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <div class="animated fadeIn delay-1s">
+      <div class="full-screen">
+        <div class="container"> 
+
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="Tape Town">
+          </div>
+         
+          <!-- MENU ITEMS -->
+          <div class="menu-bar">
+            <div class="menu-items active" style="float: left">RADIO</div>
+            <div class="menu-items" style="float: center; padding-left: 5px; font-size: 28px">MIXES</div>
+            <div class="menu-items" style="float: right;">ABOUT</div> 
+
+            <!-- NOW -->
+            <div class="menu-item-content" style="display: block;">
+            <div class="animated fadeIn delay-1s">
+              <p class="next" style="font-size: 22px; padding-top: 20px; padding-bottom: 0px">HEY THERE, PEOPLE!</p>
+              
+              <div class="now" id="now1" style="font-size: 18px; width: 250; height: 50; margin: auto">
+                  Radio is currently offline because we are moving our servers to a better location. We will be back in a couple of days.<br>
+                  -
+                  <br>
+                  В данный момент, радио отключено. Мы переносим сервера в более удобную локацию. Вернемся обратно через пару дней.
+                  
+
+            
+              </div>
+            </div>
+
+            <!-- PLAY BUTTON -->
+            <!--<div class="animated fadeIn delay-600ms dura-1s">-->
+            <!--  <a class="btn btn_default" data-toggle="tooltip" title="Play/Pause">-->
+            <!--    <i id="btn" style="padding-top: 25px; padding-right: 8px" class="fas fa-play fa-5x"></i>-->
+            <!--  </a>-->
+            <!--</div>-->
+ 
+            <!-- NEXT LIVE -->
+            <div class="animated fadeIn delay-1s">
+              <p class="next" style="padding-top: 187px; font-size: 22px">STAY TUNED!</p>
+            <!--<a id="tbb" href="#" style="padding-top: 0px; font-size: 20px"> TBA </a> </br>-->
+            </div>
+            </div> 
+
+              <!-- MIXES -->
+              <div class="menu-item-content" style="padding-right: 18px">
+                <div class="animated fadeIn delay-200ms">
+                  <iframe id="mix1" class="mixcloudWidget" width="105%" height="126"  frameborder="0" ></iframe>
+                </div>
+                <div class="animated fadeIn delay-400ms">
+                  <iframe id="mix2" class="mixcloudWidget" width="105%" height="126" frameborder="0" ></iframe>
+                </div>
+                <div class="animated fadeIn delay-600ms">
+                  <iframe id="mix3" class="mixcloudWidget" width="105%" height="126"  frameborder="0" ></iframe>
+                </div>
+                <div class="animated fadeIn delay-1s">
+                    <a href="https://www.mixcloud.com/tapetown/" target="_blank"><img class="our-music" src="assets/img/our_music.png" style="padding-top:16px; padding-left:20px; transform: scale(0.75);"></a>
+                </div>    
+              </div> 
+
+                <!-- ABOUT -->               
+                <div class="menu-item-content">
+                  <div class="animated fadeIn">
+
+                    <div class="menu-item-content-about">
+                    TAPETOWN is an independent, DIY internet radio station broadcasting 24/7 from small apartment in Kaliningrad City, occasionally streaming live mix sessions, hosted by two aspiring music enthusiasts. 
+                    </div>
+
+                    <img class="about-pic" style="padding-top: 20px; padding-right: 10px" src="assets/img/about.gif">
+                    <p class="menu-item-content-contact">Contact us: </br> <a href="mailto:tapetownradio@gmail.com">tapetownradio@gmail.com</a></p>
+
+                      <!-- SOCIAL ICONS -->
+                      <div>
+                        <a class="social-icons" href="https://www.mixcloud.com/tapetown/" target="_blank"><i class="fa fa-mixcloud" style="color: #ffffff"></i></a>
+                        <a class="social-icons" href="https://www.facebook.com/tapetownlive/ "target="_blank"><i class="fa fa-facebook-f"></i></a>
+                        <a class="social-icons" href="https://www.instagram.com/tapetown.live/ "target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a id="paybtn" data-popup-open="popup-1" href="#" style="float:right"><i class='fa fa-usd' style="color: #FFD700"></i><i class="fa fa-usd" style="color: #FFD700"></i><i class="fa fa-usd" style="color:#FFD700"></i></a>
+                      </div>
+                  </div>
+                </div>  
+
+        <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+    
+       <iframe src="https://money.yandex.ru/quickpay/shop-widget?writer=seller&targets=don't%20stop%20the%20music&targets-hint=&default-sum=100&button-text=11&hint=&successURL=&quickpay=shop&account=410018918697531" width="423" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+
+        
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+
+    <div class="tbapopup" data-popup="tbapopup-1">
+    <div class="tbapopup-inner">
+        
+        <a class="tbapopup-close" data-popup-close="tbapopup-1" href="#">x</a>
+    </div>
+   
+</div>
+           
+                </div>
+                </div>
+
+    <!-- <div id="tbamod" class="tbamodal">
+   
+    <div class="tbamodal-content">
+    <span class="close">&times;</span>
+<div class="tbapic">
+        <img src="assets/img/SAJJRA.jpg">
+    </div>
+    <p>Some text in the Modal..</p>
+  </div>
+  </div>  -->
+</main>
+
+
+
+<script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
