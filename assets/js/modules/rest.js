@@ -1,15 +1,17 @@
+import { URL } from './constants.js'
+
 class Rest {
     getNowPlaying() {
-        return new WebSocket('wss://papetown.live:444/api/live/nowplaying/tapetown')
+        return new WebSocket(URL.PLAYIN_NOW)
     }
 
     getNowPlayingFromJson() {
-        return this.extractData(fetch('assets/js/data.json'))
+        return this.extractData(fetch(URL.PLAYING_LIVE))
             .then(({ now_playing }) => now_playing)
     }
 
     getNextLive() {
-        return this.extractData(fetch('assets/js/data.json'))
+        return this.extractData(fetch(URL.PLAYING_LIVE))
             .then(({ upcoming }) => upcoming)
     }
 
