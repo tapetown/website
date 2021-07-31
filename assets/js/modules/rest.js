@@ -1,6 +1,6 @@
 class Rest {
     getNowPlaying() {
-        return new WebSocket('wss://papetown.live/api/live/nowplaying/tapetown')
+        return new WebSocket('wss://papetown.live:444/api/live/nowplaying/tapetown')
     }
 
     getNowPlayingFromJson() {
