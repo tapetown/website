@@ -1,8 +1,15 @@
-import { Layout, Tabs, Player, Rest, Donation } from './modules/index.js'
+import {
+    Layout,
+    Tabs,
+    PlayerController,
+    PlayerView,
+    Rest,
+    Donation
+} from './modules/index.js'
 
 new Layout()
 new Tabs()
-new Player(new Rest())
+new PlayerController(new PlayerView(), new Rest())
 new Donation()
 
 // LIVE VIDEO
