@@ -1,14 +1,14 @@
 class Layout {
     constructor() {
         this.backgrounds = [
-            'background.svg',
-            'background2.svg',
-            'background3.svg',
-            'background4.svg',
-            'background5.svg',
-            'background6.svg',
-            'background7.svg',
-            'background8.svg'
+            // 'background.svg',
+            // 'background2.svg',
+            // 'background3.svg',
+            // 'background4.svg',
+            // 'background5.svg',
+            // 'background6.svg',
+            // 'background7.svg',
+            'background9.svg'
         ]
         this.darkBackground = $('#p_prldr')
         this.animation = this.darkBackground.find('.svg_anm')
