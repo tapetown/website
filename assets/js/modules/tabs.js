@@ -2,19 +2,21 @@ class Tabs {
     constructor() {
         this.tabs = Array.from(document.getElementsByClassName('menu-items'))
         this.content = Array.from(document.getElementsByClassName('menu-item-content'))
-        this.mount()
+        this.switchTab = this.switchTab.bind(this)
+
+        this.tabs.forEach((tab, index) => {
+            tab.addEventListener('click', this.switchTab(tab, index))
+        })
     }
 
-    mount() {
-        this.tabs.forEach((tab, index) => {
-            tab.addEventListener('click', () => {
-                this.setUnactive()
+    switchTab(tab, index) {
+        return () => {
+            this.setUnactive()
 
-                tab.classList.add('active')
+            tab.classList.add('active')
 
-                this.setContent(index)
-            })
-        })
+            this.setContent(index)
+        }
     }
 
     setUnactive() {

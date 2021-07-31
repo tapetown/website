@@ -13,16 +13,13 @@ class Layout {
         this.darkBackground = $('#p_prldr')
         this.animation = this.darkBackground.find('.svg_anm')
         this.hidePreloader = this.hidePreloader.bind(this)
-        this.mount()
+
+        window.addEventListener('load', this.hidePreloader)
         this.setBackgroundImage()
     }
 
     static DARK_BACKGROUND_DURATION = 1000
     static ANIMATION_DURATION = 1500
-
-    mount() {
-        window.addEventListener('load', this.hidePreloader)
-    }
 
     hidePreloader() {
         this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut()
