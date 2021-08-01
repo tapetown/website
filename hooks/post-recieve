@@ -1,5 +1,5 @@
 #!/bin/bash
-TARGET="/usr/share/website"
+TARGET="/usr/share/nginx/website"
 GIT_DIR="/Users/zayanimal/Desktop/website"
 BRANCH="main"
 
