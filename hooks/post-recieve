@@ -3,6 +3,7 @@ TARGET="/usr/share/nginx/website"
 GIT_DIR="/usr/share/nginx/website.git"
 BRANCH="main"
 
+#https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa
 while read oldrev newrev ref
 do
 	# only checking out the main (or whatever branch you would like to deploy)
