@@ -1,6 +1,6 @@
 #!/bin/bash
 TARGET="/usr/share/nginx/website"
-GIT_DIR="/Users/zayanimal/Desktop/website"
+GIT_DIR="/usr/share/nginx/website.git"
 BRANCH="main"
 
 while read oldrev newrev ref
