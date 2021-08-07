@@ -1,6 +1,6 @@
 const URL = {
-    AUDIO_STREAM: 'https://papetown.live:444/radio/8000/stream',
-    PLAYIN_NOW: 'wss://papetown.live:444/api/live/nowplaying/tapetown',
+    AUDIO_STREAM: 'https://swapetown.xyz/radio/8000/stream',
+    PLAYIN_NOW: 'wss://swapetown.xyz/api/live/nowplaying/tapetown',
     PLAYING_LIVE: 'assets/js/data.json'
 }
 
