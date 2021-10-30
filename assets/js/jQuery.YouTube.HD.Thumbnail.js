@@ -80,7 +80,7 @@
 				var self = this;
 				this.$thumbnail.on('click', function(e){
 					e.preventDefault();
-					src = src+'&autoplay=1';
+					src = src+'?&autoplay=1';
 					$innerContainer.addClass('yt-hd-thumbnail-clicked');
 					self.$elem.attr({'src': src});
 				});

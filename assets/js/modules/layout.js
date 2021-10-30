@@ -1,7 +1,7 @@
 class Layout {
     constructor() {
         this.backgrounds = [
-            'background9.png'
+            'background9.svg'
         ]
         this.darkBackground = $('#p_prldr')
         this.animation = this.darkBackground.find('.svg_anm')

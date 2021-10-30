@@ -367,7 +367,7 @@ input[type=range]::-moz-slider-thumb {
 }
 
 .more {
-    padding-top: 28px
+    padding-top: 7px
 }
 
 /* Три точки */
@@ -439,7 +439,7 @@ input[type=range]::-moz-slider-thumb {
     height: 200px;
     }
         .more {
-        padding-top: 27px;
+        padding-top: 5px;
     } 
     .popup {
     transform: scale(0.75);
