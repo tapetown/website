@@ -25,8 +25,8 @@ class PlayerController {
     }
 
     setNowPlaying() {
-        this.rest.getNowPlaying().then(async (data) => {
-            this.view.setNowText(await this.defineWhatPlaying(data))
+        this.rest.getNowPlaying().addEventListener('message', async (event) => {
+            this.view.setNowText(await this.defineWhatPlaying(JSON.parse(event.data)))
         })
     }
 

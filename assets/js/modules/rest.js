@@ -2,9 +2,7 @@ import { URL } from './constants.js'
 
 class Rest {
     getNowPlaying() {
-        return fetch(URL.PLAYIN_NOW)
-            .then((res) => res.json())
-            .then((data) => data)
+        return new WebSocket(URL.PLAYIN_NOW)
     }
 
     getNowPlayingFromJson() {
