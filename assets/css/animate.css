@@ -3598,6 +3598,7 @@
   animation-delay: 300ms;
 }
 
+
 .animated.delay-400ms {
   -webkit-animation-delay: 400ms;
   animation-delay: 400ms;
@@ -3616,6 +3617,7 @@
   -webkit-animation-delay: 4600ms;
   animation-delay: 4600ms;
 }
+
 
 .animated.delay-1600ms {
   -webkit-animation-delay: 1600ms;
@@ -3696,6 +3698,11 @@
 .animated.faster {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
+}
+
+.animated.fastest {
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
 }
 .animated.dura-1s {
   -webkit-animation-duration: 1s;

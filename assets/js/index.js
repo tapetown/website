@@ -2,10 +2,10 @@ import {
     Layout,
     Tabs,
     PlayerController,
-    Donation,
     PlayerView,
-    Rest
-} from './modules'
+    Rest,
+    Donation
+} from './modules/index.js'
 
 new Layout()
 new Tabs()
