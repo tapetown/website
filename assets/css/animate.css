@@ -3689,8 +3689,8 @@
 }
 
 .animated.fastest {
-  -webkit-animation-duration: 100ms;
-  animation-duration: 100ms;
+  -webkit-animation-duration: 50ms;
+  animation-duration: 50ms;
 }
 
 .animated.faster {
