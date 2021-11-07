@@ -6,23 +6,18 @@ class Layout {
         this.darkBackground = $('#p_prldr')
         this.animation = this.darkBackground.find('.svg_anm')
         this.hidePreloader = this.hidePreloader.bind(this)
-
         window.addEventListener('load', this.hidePreloader)
         this.setBackgroundImage()
     }
 
-    static DARK_BACKGROUND_DURATION = 250   
-    static ANIMATION_DURATION = 500
+    // static DARK_BACKGROUND_DURATION = 50
+    // static ANIMATION_DURATION = 50
+
 
     hidePreloader() {
-        this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut()
-        this.darkBackground.delay(Layout.ANIMATION_DURATION).fadeOut('slow')
-
+        this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut('fastest')
+        this.darkBackground.delay(Layout.ANIMATION_DURATION).fadeOut('fastest')
         this.removeDarkBackground()
-    }
-
-    removeDarkBackground() {
-        document.body.classList.remove('js-loading');
     }
 
     setBackgroundImage() {
