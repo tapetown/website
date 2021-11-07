@@ -11,8 +11,8 @@ class Layout {
         this.setBackgroundImage()
     }
 
-    static DARK_BACKGROUND_DURATION = 1000
-    static ANIMATION_DURATION = 1500
+    static DARK_BACKGROUND_DURATION = 100
+    static ANIMATION_DURATION = 300
 
     hidePreloader() {
         this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut()
