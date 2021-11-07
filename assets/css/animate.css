@@ -3688,6 +3688,11 @@
   animation-duration: 800ms;
 }
 
+.animated.fastest {
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
 .animated.faster {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms;

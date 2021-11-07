@@ -15,8 +15,8 @@ class Layout {
     static ANIMATION_DURATION = 300
 
     hidePreloader() {
-        this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut()
-        this.darkBackground.delay(Layout.ANIMATION_DURATION).fadeOut('slow')
+        this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut('fastest')
+        this.darkBackground.delay(Layout.ANIMATION_DURATION).fadeOut('fastest')
 
         this.removeDarkBackground()
     }
