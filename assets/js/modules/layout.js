@@ -1,7 +1,7 @@
 class Layout {
     constructor() {
         this.backgrounds = [
-            'background9.png'
+            'background9.svg'
         ]
         this.darkBackground = $('#p_prldr')
         this.animation = this.darkBackground.find('.svg_anm')
@@ -12,6 +12,7 @@ class Layout {
 
     // static DARK_BACKGROUND_DURATION = 50
     // static ANIMATION_DURATION = 50
+
 
     hidePreloader() {
         this.animation.delay(Layout.DARK_BACKGROUND_DURATION).fadeOut('fastest')
