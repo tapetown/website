@@ -7,11 +7,6 @@ class Layout {
         this.setBackgroundImage()
     }
 
-    static DARK_BACKGROUND_DURATION = 50
-    static ANIMATION_DURATION = 50
-
-
-
     setBackgroundImage() {
         document.querySelector('body').style.backgroundImage = this.getBackgroundLink()
     }
