@@ -1,7 +1,7 @@
 class Layout {
     constructor() {
         this.backgrounds = [
-            'background9.png'
+            'background9.svg'
         ]
 
         this.setBackgroundImage()
