@@ -1,7 +1,8 @@
 body {
     -webkit-text-stroke: 0.1px !important;
     -webkit-font-smoothing: antialiased !important;
-    background-color: #000000;
+    background-image: url(/assets/img/background9.svg);
+    background-color: #fde24e;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,39 +30,6 @@ a {
   }
 }
 
-/*.tab {
-  overflow: hidden;
- width: 300px;
-}
-
- .tab span {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 24px;
-  font-color: #4d4d4d;
-  letter-spacing: 1.5px;  
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-.tab span:hover {
-  color: #FDF5E6;
-}
-
-.tab span.active {
-  font-color: #fff;
-}
-
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
-}*/
-
-
 /* Мигание LIVE */
 .flash {
    
@@ -70,11 +38,8 @@ a {
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-/*  opacity: 0;*/
-
 }
 
-/* Еще один вариант */
 .flash2 {
     
     animation-name: flashy;
@@ -135,7 +100,6 @@ a {
 
 
 .full-screen {
-/*	position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;

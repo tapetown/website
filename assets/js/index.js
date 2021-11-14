@@ -1,5 +1,4 @@
 import {
-    Layout,
     Tabs,
     PlayerController,
     PlayerView,
@@ -7,7 +6,6 @@ import {
     Donation
 } from './modules/index.js'
 
-new Layout()
 new Tabs()
 new PlayerController(new PlayerView(), new Rest())
 new Donation()
