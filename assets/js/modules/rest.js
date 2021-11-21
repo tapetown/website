@@ -5,11 +5,6 @@ class Rest {
         return new WebSocket(URL.PLAYIN_NOW)
     }
 
-    getNowPlayingFromJson() {
-        return this.extractData(fetch(URL.PLAYING_LIVE))
-            .then(({ now_playing }) => now_playing)
-    }
-
     getNextLive() {
         return this.extractData(fetch(URL.PLAYING_LIVE))
             .then(({ upcoming }) => upcoming)

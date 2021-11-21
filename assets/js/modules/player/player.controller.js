@@ -37,12 +37,14 @@ class PlayerController {
     }
 
     defineWhatPlaying(data) {
-        const { live: { is_live } } = data
+        const { live: { is_live, streamer_name = '' } } = data
 
         if (is_live) {
             this.view.setFlash()
-            return this.rest.getNowPlayingFromJson()
+            return Promise.resolve(streamer_name)
         }
+
+        this.view.unsetFlash()
 
         return Promise.resolve(data?.now_playing?.song?.text)
     }

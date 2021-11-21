@@ -44,6 +44,10 @@ class PlayerView {
         this.flash.style.display = 'block'
     }
 
+    unsetFlash() {
+        this.flash.style.display = 'none'
+    }
+
     setButtonState() {
         if (this.audio.paused) {
             this.playButton.classList.remove('fa', 'fa-pause')
