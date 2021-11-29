@@ -87,7 +87,7 @@ a {
 
 
 
-.contpre{
+.contpre {
     top: 0;
     left: 0;
     width: 100%;
@@ -105,11 +105,10 @@ a {
 
 
 .full-screen {
-    top: 0;
-    left: 0;
     width: 100%;
     height: 95%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -194,11 +193,15 @@ a {
     text-decoration:none;
 }
 
-/* Лого ТТ */
-.logo img {
-    width: 270px;
-    height: 270px;
-    padding-bottom: 10px;
+.logo {
+    margin-top: 4.5em;
+    margin-bottom: -4.5em;
+    margin-right: 4.5em;
+}
+
+.logo__img {
+    width: 210px;
+    height: 210px;
 }
 
 #btn {
@@ -404,11 +407,8 @@ input[type=range]::-moz-slider-thumb {
     padding-left: 16px;
     padding-right: 16px;
     }
-    .logo img {
-    width: 200px;
-    height: 200px;
-    }
-        .more {
+
+    .more {
         padding-top: 5px;
     }
     .popup {
@@ -429,7 +429,12 @@ input[type=range]::-moz-slider-thumb {
 @media screen and (width: 414px) and (height: 736px){
     .full-screen {
         height: 113.3%;
-}
+    }
+
+    .logo {
+        margin-bottom: 2em;
+        margin-right: 12em;
+    }
 
     .container {
         transform: scale(1.17) skewY(-10deg);
@@ -458,7 +463,13 @@ input[type=range]::-moz-slider-thumb {
 @media screen and (width: 375px) and (height: 667px){
     .full-screen {
         height: 113.5%;
-}
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-right: 10em;
+    }
+
     .container {
         transform: scale(1.064) skewY(-10deg);
     }
@@ -489,7 +500,13 @@ input[type=range]::-moz-slider-thumb {
 @media screen and (width: 375px) and (height: 812px){
     .full-screen {
         height: auto;
-}
+    }
+
+    .logo {
+        margin-bottom: 0;
+        margin-right: 9em;
+    }
+
     .container {
         transform: scale(1.064) skewY(-10deg);
     }
@@ -518,12 +535,21 @@ input[type=range]::-moz-slider-thumb {
 /* iPhone 5/SE port*/
 
 @media screen and (max-width: 360px){
-
-     .full-screen {
+    .full-screen {
         height: 94%;
-  }
+    }
 
-     .container {
+    .logo {
+        margin-bottom: -6.5em;
+        margin-right: 4em;
+    }
+
+    .logo__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container {
         transform: scale(0.6) skewY(-10deg);
     }
 
