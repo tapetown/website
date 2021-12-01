@@ -27,7 +27,7 @@ a {
 
 .main__logo {
     margin-top: 3em;
-    margin-bottom: -4.5em;
+    margin-bottom: -6em;
     margin-right: 4.3em;
 }
 
@@ -37,10 +37,14 @@ a {
 }
 
 .main__box {
-    transform: scale(0.7) skewY(-10deg);
+    transform: scale(0.65) skewY(-10deg);
 }
 
-@media screen and (min-height: 569px) {
+@media screen and (min-height: 668px) {
+    .main__logo {
+        margin-bottom: -4.5em;
+    }
+
     .main__logo-img {
         width: 13em;
         height: 13em;
@@ -49,6 +53,14 @@ a {
     .main__box {
         transform: scale(0.75) skewY(-10deg);
     }
+}
+
+.menu-bar {
+    width: 20em;
+    height: 30em;
+    background-color: #020304;
+    padding: 1em 1.5em;
+    text-align: center;
 }
 
 .contpre {
@@ -153,14 +165,6 @@ a {
     font-family: 'HelveticaNeue45';
     color: #FDF5E6;
     /*padding-top: 8px;*/
-}
-
-.menu-bar {
-    width: 20em;
-    height: 30em;
-    background-color: #000000;
-    padding: 1em 1.5em;
-    text-align: center;
 }
 
 .ttplayacont {
