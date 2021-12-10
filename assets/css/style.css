@@ -54,8 +54,8 @@ a {
         transform: scale(0.75) skewY(-10deg);
     }
 
-    .volume-bar {
-        display: hidden;
+    #volume-bar {
+        display: none;
     }
 
 
