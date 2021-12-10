@@ -39,7 +39,10 @@ a {
 .main__box {
     transform: scale(0.65) skewY(-10deg);
 }
-
+.ttplayacont {
+    display: none;
+    
+}
 @media screen and (min-height: 668px) {
     .main__logo {
         margin-bottom: -4.5em;
@@ -53,7 +56,9 @@ a {
     .main__box {
         transform: scale(0.75) skewY(-10deg);
     }
-  
+    .ttplayacont {
+        display: block;
+    }
 
 }
 
