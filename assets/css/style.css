@@ -53,6 +53,12 @@ a {
     .main__box {
         transform: scale(0.75) skewY(-10deg);
     }
+
+    .volume-bar {
+        display: hidden;
+    }
+
+
 }
 
 .menu-bar {
