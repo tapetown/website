@@ -19,7 +19,7 @@ a {
     align-items: center;
     justify-content: center;
     background-image: url(/assets/img/background9.svg);
-    background-color: #fde24e;
+    background-color: #2f7eba;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,7 +41,7 @@ a {
 }
 .ttplayacont {
     display: none;
-    
+
 }
 @media screen and (min-height: 668px) {
     .main__logo {
