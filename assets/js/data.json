@@ -1,6 +1,7 @@
 {
 	"data": {
 		"upcoming": "12/02 Man On The Drums, Berdnikov",
-		"now_playing": "Muzikalist"
+		"dj_live": true,
+		"streamer_name": "Muzikalist"
 	}
 }
