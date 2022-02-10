@@ -1,15 +1,17 @@
-import { URL } from '../constants.js'
+import { URL, TIMEOUT } from '../constants.js'
 
 class PlayerController {
     constructor(view, rest) {
         this.view = view
         this.rest = rest
+        this.djLive = false
         this.setPlayerState = this.setPlayerState.bind(this)
 
         this.view.playButton.addEventListener('click', this.setPlayerState)
         this.view.setAudioSource(URL.AUDIO_STREAM)
         this.setVolumeSlider()
         this.setNowPlaying()
+        this.setNowPlayingFromFile()
         this.setNextLive()
     }
 
@@ -25,28 +27,32 @@ class PlayerController {
     }
 
     setNowPlaying() {
-        this.rest.getNowPlaying().addEventListener('message', async (event) => {
-            this.view.setNowText(await this.defineWhatPlaying(JSON.parse(event.data)))
+        this.rest.getNowPlaying().addEventListener('message', (event) => {
+            if (!this.djLive) {
+                this.view.setNowText(JSON.parse(event.data)?.now_playing?.song?.text)
+            }
         })
+    }
+
+    setNowPlayingFromFile() {
+        setInterval(() => {
+            this.rest.getNowPlayingFromFile().then(({ dj_live, streamer_name }) => {
+                this.djLive = dj_live
+
+                if (dj_live) {
+                    this.view.setFlash()
+                    this.view.setNowText(streamer_name)
+                } else {
+                    this.view.unsetFlash()
+                }
+            })
+        }, TIMEOUT.PLAYING_NOW_FROM_FILE_REFRESH)
     }
 
     setNextLive() {
         this.rest.getNextLive().then((res) => {
             this.view.setTbaText(res)
         })
-    }
-
-    defineWhatPlaying(data) {
-        const { live: { is_live, streamer_name = '' } } = data
-
-        if (is_live) {
-            this.view.setFlash()
-            return Promise.resolve(streamer_name)
-        }
-
-        this.view.unsetFlash()
-
-        return Promise.resolve(data?.now_playing?.song?.text)
     }
 }
 
