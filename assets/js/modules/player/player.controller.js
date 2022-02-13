@@ -25,8 +25,8 @@ class PlayerController {
     }
 
     setNowPlaying() {
-        this.rest.getNowPlaying().addEventListener('message', async (event) => {
-            this.view.setNowText(await this.defineWhatPlaying(JSON.parse(event.data)))
+        this.rest.getNowPlaying().addEventListener('message', (event) => {
+            this.view.setNowText(this.defineWhatPlaying(JSON.parse(event.data)))
         })
     }
 
@@ -37,16 +37,16 @@ class PlayerController {
     }
 
     defineWhatPlaying(data) {
-        const { live: { is_live, streamer_name = '' } } = data
+        const { live: { is_live }, now_playing } = data
 
         if (is_live) {
             this.view.setFlash()
-            return Promise.resolve(streamer_name)
+            return now_playing?.song?.title
         }
 
         this.view.unsetFlash()
 
-        return Promise.resolve(data?.now_playing?.song?.text)
+        return now_playing?.song?.text
     }
 }
 
