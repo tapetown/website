@@ -37,16 +37,16 @@ class PlayerController {
     }
 
     defineWhatPlaying(data) {
-        const { live: { is_live }, now_playing } = data
+        const { live: { is_live }, now_playing: { song } } = data
 
         if (is_live) {
             this.view.setFlash()
-            return now_playing?.song?.title
+            return song.title
         }
 
         this.view.unsetFlash()
 
-        return now_playing?.song?.text
+        return song.text
     }
 }
 
