@@ -4,6 +4,7 @@ class Donation {
         this.payButton = document.getElementById('paybtn')
         this.openPopUp = document.querySelector('[data-popup-open]')
         this.closePopUp = document.querySelector('[data-popup-close]')
+
         this.mount()
     }
 
