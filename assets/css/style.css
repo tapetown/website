@@ -8,7 +8,7 @@ a {
 }
 
 @font-face {
-    font-family: HelveticaNeueLight; /* Гарнитура шрифта */
+    font-family: HelveticaNeue; /* Гарнитура шрифта */
     src: url(/assets/fonts/HelveticaNeueLight.ttf); /* Путь к файлу со шрифтом */
 }
 
