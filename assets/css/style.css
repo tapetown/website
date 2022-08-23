@@ -8,7 +8,7 @@ a {
 }
 
 @font-face {
-    font-family: HelveticaNeue; /* Гарнитура шрифта */
+    font-family: HelveticaNeueLight; /* Гарнитура шрифта */
     src: url(/assets/fonts/HelveticaNeueLight.ttf); /* Путь к файлу со шрифтом */
 }
 
@@ -169,7 +169,7 @@ a {
 
 /* Играет Сейчас */
 #now1 {
-    font-family: 'HelveticaNeue45';
+    font-family: 'HelveticaNeueLight';
     color: #FDF5E6;
     /*padding-top: 8px;*/
 }
@@ -292,7 +292,7 @@ input[type=range]::-moz-slider-thumb {
 
 .menu-item-content {
     position: relative;
-    font-family: 'HelveticaNeue45';
+    font-family: 'HelveticaNeueLight';
     padding-top: 10px;
     padding-right: 1px;
     color: #FDF5E6;
@@ -301,7 +301,7 @@ input[type=range]::-moz-slider-thumb {
 }
 
 .menu-item-content-about {
-    font-family: 'HelveticaNeue45';
+    font-family: 'HelveticaNeueLight';
     text-align: justify;
     width: 99%;
     color: #FDF5E6;
@@ -309,7 +309,7 @@ input[type=range]::-moz-slider-thumb {
 }
 
 .menu-item-content-contact {
-    font-family: 'HelveticaNeue45';
+    font-family: 'HelveticaNeueLight';
     text-align: left;
     color: #FDF5E6;
     font-size: 15px;
