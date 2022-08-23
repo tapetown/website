@@ -8,8 +8,8 @@ a {
 }
 
 @font-face {
-    font-family: HelveticaNeue45; /* Гарнитура шрифта */
-    src: url(/assets/fonts/HelveticaNeue45.ttf); /* Путь к файлу со шрифтом */
+    font-family: HelveticaNeueLight; /* Гарнитура шрифта */
+    src: url(/assets/fonts/HelveticaNeueLight.ttf); /* Путь к файлу со шрифтом */
 }
 
 .main {
